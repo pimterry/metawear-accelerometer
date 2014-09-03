@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MetaWearAPI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/metawear-accelerometer/libs/MetaWearAPI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
