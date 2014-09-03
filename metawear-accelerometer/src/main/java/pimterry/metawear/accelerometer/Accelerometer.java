@@ -10,7 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.TextView;
 
+import static android.view.View.OnClickListener;
 
 
 public class Accelerometer extends Activity {
@@ -58,7 +60,20 @@ public class Accelerometer extends Activity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_accelerometer, container, false);
+
+            rootView.findViewById(R.id.scanButton).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    scanForDevices();
+                }
+            });
+
             return rootView;
+        }
+
+        private void scanForDevices() {
+            TextView status = (TextView) this.getView().findViewById(R.id.statusText);
+            status.setText("Scanning...");
         }
     }
 }

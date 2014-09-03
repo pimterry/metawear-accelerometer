@@ -8,9 +8,19 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="pimterry.metawear.accelerometer.Accelerometer$PlaceholderFragment">
 
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:id="@+id/scanButton"
+            android:layout_marginTop="46dp"
+            android:layout_below="@+id/statusText" android:layout_centerHorizontal="true" android:enabled="true"
+            />
     <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Not Connected"
+            android:id="@+id/statusText" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"/>
 </RelativeLayout>
